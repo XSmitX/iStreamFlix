@@ -8,7 +8,7 @@ from pyrogram.enums import ChatMemberStatus
 import random
 
 bot = Client("mybot1",
-             bot_token="7333255087:AAGwGyKJABm8FohsVdZJamRedZyiGyBHBYI",
+             bot_token="7333255087:AAHCgXLpSUQacvoAAtxufYaeyhUFNYF_wc0",
              api_id=1712043,
              api_hash="965c994b615e2644670ea106fd31daaf"
              )
