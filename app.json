@@ -1,0 +1,26 @@
+{
+    "name": "iStreamFlix",
+    "description": "A Pyrogram and MongoDB based Telegram Bot for generating MOVIES",
+    "keywords": [
+        "telegram",
+        "short link",
+        "Acoount Gen Bot",
+        "Telegram Acoount Gen Bot"
+    ],
+    "website": "https://github.com/XSmitX/iStreamFlix",
+    "repository": "https://github.com/XSmitX/iStreamFlix",
+    "logo": "https://ibb.co/kMVxrCj",
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "standard-1x"
+        }
+    },
+    "stack": "heroku-22"
+}
