@@ -89,7 +89,7 @@ async def on_message(bot, message):
     await bot.send_message(-1001855899992, f'Title : {user_input}\nUser : ``{message.from_user.id}`` or @{message.from_user.username}')
     
     result, updated_string, s_value, e_value = check_and_extract_SE(user_input)
-    search_message = await message.reply_text('<b>📤</b>')
+    search_message = await message.reply_text('📤')
     mdetails = await asyncio.to_thread(search_movie_or_tv, updated_string)
     if not mdetails:
         await search_message.delete()
@@ -144,7 +144,7 @@ async def on_message(bot, message):
         Server3 = f'https://embed.su/embed/movie/{id}'
         resulttt = await api.check_class_sync(VIdSrcPro, 'dark')
         await search_message.delete()
-        search_message2 = await message.reply_text('<b>📥</b>')
+        search_message2 = await message.reply_text('📥')
         
 
         print(resulttt)
@@ -195,7 +195,7 @@ async def on_message(bot, message):
         vidsrcNl = f'https://vidlink.pro/tv/{id}/{s}/{e}'
         resulttt = await api.check_class_sync(vidsrcNl, 'dark')
         await search_message.delete()
-        search_message2 = await bot.send_message(message.chat.id, '<b>📥</b>')
+        search_message2 = await bot.send_message(message.chat.id, '📥')
         if serverchange == True:
             if resulttt:
                 button_rows = [[ikb('Extra Server', url=vidsrcNl)]]
