@@ -7,7 +7,7 @@ from api import search_movie_or_tv
 from serverchecker import check_stream_availability 
 from vidsrc_pro_api import VidSrcProAPI
 bot = Client("mybot1",
-             bot_token="7333255087:AAGwGyKJABm8FohsVdZJamRedZyiGyBHBYI",
+             bot_token="7333255087:AAHCgXLpSUQacvoAAtxufYaeyhUFNYF_wc0",
              api_id=1712043,
              api_hash="965c994b615e2644670ea106fd31daaf"
              )
