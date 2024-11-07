@@ -89,7 +89,7 @@ async def on_message(bot, message):
     await bot.send_message(-1001855899992, f'Title : {user_input}\nUser : ``{message.from_user.id}`` or @{message.from_user.username}')
     
     result, updated_string, s_value, e_value = check_and_extract_SE(user_input)
-    search_message = await message.reply_text('📤')
+    search_message = await message.reply_text('📤5')
     mdetails = await asyncio.to_thread(search_movie_or_tv, updated_string)
     if not mdetails:
         await search_message.delete()
