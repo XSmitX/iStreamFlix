@@ -10,7 +10,7 @@ bot = Client("mybot1",
              bot_token="7333255087:AAHCgXLpSUQacvoAAtxufYaeyhUFNYF_wc0",
              api_id=1712043,
              api_hash="965c994b615e2644670ea106fd31daaf"
-             )
+            )
 global serverchange
 serverchange = False
 channelid = -1002305684598
@@ -89,7 +89,7 @@ async def on_message(bot, message):
     await bot.send_message(-1001855899992, f'Title : {user_input}\nUser : ``{message.from_user.id}`` or @{message.from_user.username}')
     
     result, updated_string, s_value, e_value = check_and_extract_SE(user_input)
-    search_message = await message.reply_text('📤')
+    search_message = await bot.send_message(message.chat.id,'📤')
     mdetails = await asyncio.to_thread(search_movie_or_tv, updated_string)
     if not mdetails:
         await search_message.delete()
